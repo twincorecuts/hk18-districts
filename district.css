@@ -1,0 +1,698 @@
+/* ============================================
+   District Page — 分區頁專用樣式
+   ============================================ */
+
+
+/* ============================================
+   1. Hero
+   ============================================ */
+
+.district-hero {
+  position: relative;
+  padding: 96px 0 72px;
+  background: #0f1b2d;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* 霓虹光暈 */
+.district-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(230, 57, 70, 0.28) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.district-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(42, 157, 143, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.district-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.district-hero--central {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/central.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.district-hero--wan-chai {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/wanchai.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--eastern {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/eastern.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--southern {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/southern.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--yautsimmong {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/yautsimmong.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--shamshuipo {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/shamshuipo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--kowlooncity {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/kowlooncity.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--wongtaisin {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/wongtaisin.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--kwuntong {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/kwuntong.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--kwaitsing {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/kwaitsing.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--tsuenwan {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/tsuenwan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--tuenmun {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/tuenmun.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--yuenlong {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/yuenlong.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--north {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/north.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--taipo {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/taipo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--shatin {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/shatin.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--saikung {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/saikung.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero--islands {
+  background-image:
+    linear-gradient(135deg, rgba(15,27,45,0.75) 0%, rgba(15,27,45,0.55) 100%),
+    url('images/districts/islands.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.district-hero .breadcrumb {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 16px;
+}
+
+.district-hero .breadcrumb a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 200ms ease;
+}
+
+.district-hero .breadcrumb a:hover {
+  color: #f4a261;
+}
+
+.district-hero__title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.district-hero__en {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+}
+
+.district-hero__tagline {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 40ch;
+  margin: 0;
+}
+
+
+/* ============================================
+   2. Quick Facts
+   ============================================ */
+
+.quick-facts {
+  background: #ffffff;
+  border-bottom: 1px solid #d8d3cc;
+}
+
+.quick-facts .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 32px 24px;
+}
+
+.fact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 0 16px 16px;
+  border-left: 3px solid #e63946;
+}
+
+.fact-card__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b6b6b;
+}
+
+.fact-card__value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f1b2d;
+}
+
+
+/* ============================================
+   3. 目錄 TOC
+   ============================================ */
+
+.toc {
+  position: sticky;
+  top: 64px;
+  z-index: 50;
+  background: #ffffff;
+  border-bottom: 1px solid #d8d3cc;
+  overflow-x: auto;
+}
+
+.toc .container {
+  display: flex;
+  gap: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  white-space: nowrap;
+}
+
+.toc a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b6b6b;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 200ms ease;
+}
+
+.toc a:hover {
+  color: #e63946;
+  border-bottom-color: #e63946;
+}
+
+
+/* ============================================
+   4. 內容區塊
+   ============================================ */
+
+.content-section {
+  padding: 64px 0;
+  scroll-margin-top: 140px;
+}
+
+.content-section + .content-section {
+  border-top: 1px solid #d8d3cc;
+}
+
+.section-body {
+  max-width: 70ch;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #1a1a1a;
+  margin: 0 auto;
+}
+
+.section-body p {
+  margin-bottom: 16px;
+}
+
+.section-body p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================
+   5. 卡片 Grid（景點 / 食物共用）
+   ============================================ */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  border-left: 4px solid #e63946;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.card__body {
+  padding: 24px;
+}
+
+.card__title {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+  color: #0f1b2d;
+}
+
+.card__text {
+  font-size: 0.875rem;
+  color: #6b6b6b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* ============================================
+   6. 交通列表
+   ============================================ */
+
+.transport-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.transport-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  border-left: 3px solid #e63946;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+
+/* ============================================
+   7. Badge
+   ============================================ */
+
+.badge {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 999px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.badge--mtr     { background: #e2231a; }
+.badge--bus     { background: #f4a261; color: #0f1b2d; }
+.badge--tram    { background: #2a9d8f; }
+.badge--ferry   { background: #0075c2; }
+.badge--minibus { background: #10b981; }
+.badge--lightrail { background: #d97706; }
+.badge--cablecar { background: #0891b2; }
+
+/* ============================================
+   8. 上下區導航
+   ============================================ */
+
+.district-pager {
+  padding: 40px 0;
+  background: #ede9e3;
+  border-top: 1px solid #d8d3cc;
+}
+
+.district-pager .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pager-link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #0f1b2d;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 200ms ease;
+}
+
+.pager-link:hover {
+  background: #ffffff;
+  color: #e63946;
+}
+
+
+/* ============================================
+   9. Responsive
+   ============================================ */
+
+@media (max-width: 600px) {
+
+  .district-hero {
+    padding: 64px 0 48px;
+  }
+
+  .district-hero__title {
+    font-size: 2rem;
+  }
+
+  .content-section {
+    padding: 48px 0;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .district-pager .container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}
+
+/* 新增喺 district.css 任何位置 */
+main .section-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+main .section-title::after {
+  content: '';
+  flex-basis: 100%;
+  width: 48px;
+  height: 3px;
+  background: #e63946;
+  margin: 16px auto 0;
+}
+
+/* ============================================
+   一日遊路線
+   ============================================ */
+
+.itinerary {
+  position: relative;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding-left: 32px;
+}
+
+/* 時間軸直線 */
+.itinerary::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 7px;
+  width: 2px;
+  background: #e63946;
+}
+
+.itinerary-item {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+
+.itinerary-item:last-child {
+  padding-bottom: 0;
+}
+
+/* 時間軸圓點 */
+.itinerary-item::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #e63946;
+  z-index: 1;
+}
+
+.itinerary-item__time {
+  flex-shrink: 0;
+  font-family: 'Noto Serif HK', serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #e63946;
+  width: 52px;
+  padding-top: 2px;
+}
+
+.itinerary-item__content {
+  flex: 1;
+}
+
+.itinerary-item__title {
+  font-size: 1.0625rem;
+  margin-bottom: 4px;
+  color: #0f1b2d;
+}
+
+.itinerary-item__desc {
+  font-size: 0.875rem;
+  color: #6b6b6b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .itinerary {
+    padding-left: 28px;
+  }
+
+  .itinerary-item__time {
+    width: 44px;
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================
+   經典電影場景
+   ============================================ */
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+.movie-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border-left: 4px solid #e63946;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.movie-card__info {
+  padding: 24px;
+}
+
+.movie-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+  color: #0f1b2d;
+}
+
+.movie-card__meta {
+  font-size: 0.8125rem;
+  color: #6b6b6b;
+  margin-bottom: 12px;
+}
+
+.movie-card__desc {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.movie-card__location {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e63946;
+  margin: 0;
+}
+
+.movie-card__map {
+  height: 220px;
+  background: #ede9e3;
+}
+
+.movie-card__map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ============================================
+   冷知識
+   ============================================ */
+
+.trivia-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+.trivia-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  border-left: 3px solid #e63946;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.trivia-item__num {
+  font-family: 'Noto Serif HK', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e63946;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.trivia-item__text {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0;
+}
